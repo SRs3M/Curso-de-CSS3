@@ -1,0 +1,45 @@
+/* Para seleccionar objetos mediante id, utilizamos el numeral (#) */
+#titulo {
+    color: tomato;
+}
+
+/* Para seleccionar objetos mediante clases, utilizamos el punto (.) */
+.texto {
+    color: slateblue;
+}
+
+/* Aqui estamos seleccionando a todas las etiquetas de p que contengan la clase de texto */
+p.texto {
+    color:slateblue;
+}
+
+/* La ultima instrucción es esta, asi que por eso la etiqueta que contenia las clases de texto & especial. se le aplicara esta */
+p.especial {
+    color:mediumseagreen;
+}
+
+/* Aqui estamos seleccionando a todas las etiquetas de <div> que contengan hijos (o nietos, bisnietos, #nietos) de etiquetas <p> */
+div p {
+    color: aquamarine;
+}
+
+/* Para aplicar un mismo estilo a multiples etiquetas, separamos con una coma (,) las instrucciónes */
+div h2, div h3 {
+    color: brown;
+}
+
+/* Para seleccionar TODO, utilizamos el asterisco (*) */
+* {
+    font-size: 24px; /* Aplicar un tamaño al texto */
+    color: black; /* El selector universal aplicará propiedades solamente si no han sido definidas por otros selectores (osea si hay un selector que no tiene una propiedad de color, este selector universal lo aplicará, pero si un selector ya tiene una propiedad de color asignada. No se aplicará) */
+}
+
+/* Aplicar color con Hexagesimales */
+.color {
+    /* El primer digito equivale al rojo, el segundo digito equivale al verde y el tercer digito equivale al azul */
+    color: #f00;
+    /* Los primeros dos digitos equivalen al rojo, el tercero y cuarto al verde, el quinto y sexto al azul */
+    color: #ff0000;
+    /* indicar valor con 0 - 255, donde el más fuerte es 255 y la ausencia de color es el 0 */
+    color: rgb(255, 0, 0);
+}
